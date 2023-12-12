@@ -94,6 +94,7 @@ function download() {
   } else {
     run('pwd')
     run('ls','-lah')
+    run('echo', esHome)
     run('wget', '-q', '-O', 'elasticsearch.tar.gz', url);
     run('tar', 'xfz', 'elasticsearch.tar.gz');
   }
